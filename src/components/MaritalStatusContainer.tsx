@@ -3,10 +3,10 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const MaritalStatusContainer = () => {
   return (
-    <Card className="relative rounded h-full flex-1">
+    <Card className="relative rounded">
       <CardContent className="pt-0 mt-0 flex-1">
-        <div className="mb-4">
-          <label className="block text-base font-medium text-gray-700 mb-1">Estado Civil</label>
+        <div className="mb-4 border-b border-[#F5F5F5]">
+          <label className="block font-bold mb-3.5">Estado Civil</label>
           <Select>
             <SelectTrigger className="w-full focus-visible:ring-0 bg-gray-100">Solteiro</SelectTrigger>
             <SelectContent>
@@ -17,8 +17,9 @@ const MaritalStatusContainer = () => {
             </SelectContent>
           </Select>
         </div>
+        <div className="border-t border-[#F5F5F5] mt-4 mb-2"></div>
         <div className="mb-4">
-          <label className="block text-base font-medium text-gray-700 mb-1">Regime patrimonial</label>
+          <label className="block font-bold mb-3.5">Regime patrimonial</label>
           <Select>
             <SelectTrigger className="w-full focus-visible:ring-0 bg-gray-100">Comunhão parcial de bens</SelectTrigger>
             <SelectContent>

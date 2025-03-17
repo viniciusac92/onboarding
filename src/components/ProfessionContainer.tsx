@@ -1,14 +1,15 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from './ui/input';
+import { Label } from './ui/label';
 
-const ProfessionContainer = () => {
+const ProfessionContainer: React.FC = () => {
   return (
-    <Card className="relative rounded h-full">
-      <CardContent className="pt-0 mt-0">
-        <div className="mb-4">
-          <label className="block text-base font-bold font-medium text-black-500">Profissão</label>
-          <label className="block text-base font-medium text-gray-700">Informe sua profissão</label>
-          <Input placeholder="Ex: Contador" className="w-full mt-1 focus-visible:ring-0  bg-gray-100" />
+    <Card className="relative rounded p-6">
+      <CardContent className="p-0">
+        <div>
+          <Label className="block font-bold pb-1.5">Profissão</Label>
+          <Label className="block pb-3.5">Informe sua profissão</Label>
+          <Input placeholder="Ex: Contador" className="w-full focus-visible:ring-0 bg-gray-100" />
         </div>
       </CardContent>
     </Card>

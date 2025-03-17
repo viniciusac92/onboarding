@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from '../layout/Header';
 import '../index.css';
+import myBackground from '../assets/obvia-login-background-image.png';
 
 const Login: React.FC = () => {
   return (
-    <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/obvia-login-background-image.png)' }}>
+    <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${myBackground})` }}>
       <Header />
       <div className="absolute right-0 top-0 bottom-0 flex items-center justify-center p-8">
         <div className="bg-white p-8 rounded shadow-md w-full max-w-sm">
