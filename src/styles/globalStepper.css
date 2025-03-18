@@ -1,0 +1,17 @@
+.stepper-fixed {
+  margin-top: 58px;
+  position: fixed;
+  top: 225px;
+  left: 48px;
+  width: 320px;
+}
+
+@media (max-width: 768px) {
+  .stepper-fixed {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+    left: auto;
+    top: auto;
+  }
+}

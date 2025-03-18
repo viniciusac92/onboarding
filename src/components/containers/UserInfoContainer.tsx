@@ -1,8 +1,9 @@
 import React from 'react';
 import { Upload } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { DataLabel } from '@/components/DataLabel';
 import { Card, CardContent } from '@/components/ui/card';
+import { Label } from '../ui/label';
 
 const UserInfoContainer: React.FC = () => {
   const name = "Pietro Schirano";
@@ -12,25 +13,24 @@ const UserInfoContainer: React.FC = () => {
 
   return (
     <div className="flex flex-col">
-      <h1 className="responsive-page-title text-3xl font-bold mb-[12px]">Seus dados</h1>
-      <Card className="relative rounded h-full flex-1">
+      <Card className="relative rounded h-full flex-1 border-none">
         <CardContent className="pt-0 mt-0 flex-1 overflow-y-auto">
             <div className="mb-4">
-              <Label className="block font-bold mb-1.5">Nome</Label>
-              <Input readOnly value={name} className="focus-visible:ring-0 bg-gray-100" />
+              <DataLabel>Nome</DataLabel>
+              <Input value={name} />
             </div>
             <div className="flex flex-row gap-4 mb-4">
               <div className="flex-1 max-w-[400px]">
-                <Label className="block font-bold mb-1.5">CPF</Label>
-                <Input readOnly value={cpf} className="focus-visible:ring-0 w-full bg-gray-100" />
+                <DataLabel>CPF</DataLabel>
+                <Input value={cpf} />
               </div>
               <div className="flex-1 max-w-33.5">
-                <Label className="block font-bold mb-1.5">RG</Label>
-                <Input readOnly value={rg} className="focus-visible:ring-0 w-full bg-gray-100" />
+                <DataLabel>RG</DataLabel>
+                <Input value={rg} />
               </div>
               <div className="flex-1 max-w-19">
-                <Label className="block font-bold mb-1.5">Órgão</Label>
-                <Input readOnly value={orgao} className="focus-visible:ring-0 w-full bg-gray-100" />
+                <DataLabel>Órgão</DataLabel>
+                <Input value={orgao} />
               </div>
             </div>
             <div className="mt-4">

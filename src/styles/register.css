@@ -1,0 +1,29 @@
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    color: var(--global-text-color);
+  }
+  
+  .responsive-column {
+    flex: 1 1 0;
+    min-width: 280px;
+    color: var(--global-text-color);
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-container {
+      flex-direction: column;
+    }
+    .responsive-column {
+      flex: 1 1 100%;
+      padding: 0 16px 8px 8px;
+      max-width: 100%;
+    }
+  
+    .responsive-page-title {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+  }
