@@ -13,7 +13,6 @@ import StepConnector from '@mui/material/StepConnector';
 import Button from '@mui/material/Button';
 import { ChevronRight } from 'lucide-react';
 import AddressContainer from '@/components/AddressContainer';
-import { useNavigate } from 'react-router-dom';
 
 const steps = [
   {
@@ -27,13 +26,11 @@ const steps = [
   },
 ];
 
-const Register: React.FC = () => {
-  const navigate = useNavigate();
+const Enterprise: React.FC = () => {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    navigate('/enterprise');
   };
 
   return (
@@ -44,7 +41,7 @@ const Register: React.FC = () => {
         <div className="responsive-container  pt-24 ">
           <div className="responsive-column pl-12 pt-12 max-w-[320px]">
             <div>
-              <OnboardingInfoText heading="Vamos abrir sua empresa!" paragraph="Nesta primeira etapa, precisamos de alguns dados sobre você. 😊" />
+              <OnboardingInfoText heading="Conta pra gente sobre o seu negócio!" paragraph="Nesta etapa, queremos saber um pouco mais sobre seu negócio. 💼" />
               <div className="mt-8 space-y-8">
                 <Box sx={{ maxWidth: 400 }}>
                   <Stepper activeStep={activeStep} orientation="vertical" connector={<StepConnector />}>
@@ -91,4 +88,4 @@ const Register: React.FC = () => {
   );
 };
 
-export default Register;
+export default Enterprise;

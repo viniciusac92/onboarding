@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Upload, ChevronUp, ChevronDown } from 'lucide-react';
+import React from 'react';
+import { Upload } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 
 const UserInfoContainer: React.FC = () => {
   const name = "Pietro Schirano";
@@ -10,18 +10,11 @@ const UserInfoContainer: React.FC = () => {
   const rg = "xx.xxx-xxx";
   const orgao = "SSPMG";
 
-  const [isOpen, setIsOpen] = useState(true);
-
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <div className="flex flex-col">
       <h1 className="responsive-page-title text-3xl font-bold mb-[12px]">Seus dados</h1>
       <Card className="relative rounded h-full flex-1">
-        {isOpen && (
-          <CardContent className="pt-0 mt-0 flex-1 overflow-y-auto">
+        <CardContent className="pt-0 mt-0 flex-1 overflow-y-auto">
             <div className="mb-4">
               <Label className="block font-bold mb-1.5">Nome</Label>
               <Input readOnly value={name} className="focus-visible:ring-0 bg-gray-100" />
@@ -57,7 +50,6 @@ const UserInfoContainer: React.FC = () => {
               </div>
             </div>
           </CardContent>
-        )}
       </Card>
     </div>
   );

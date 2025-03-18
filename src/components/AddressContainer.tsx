@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Upload, ChevronUp, ChevronDown } from 'lucide-react';
+import React from 'react';
+import { Upload } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
+import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
 const AddressContainer: React.FC = () => {
   const cep = "00000-000";

@@ -1,5 +1,4 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Input } from './ui/input';
 import { Upload } from 'lucide-react';
 
 const ProfessionalLicenseContainer = () => {
