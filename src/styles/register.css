@@ -15,10 +15,11 @@
 @media (max-width: 768px) {
     .responsive-container {
         flex-direction: column;
+        padding-top: 0px;
     }
     .responsive-column {
         flex: 1 1 100%;
-        padding: 56px 24px 0 24px;
+        padding: 56px 16px 0 16px;
         max-width: 100%;
     }
 
