@@ -1,15 +1,14 @@
 .stepper-fixed {
-    margin-top: 58px;
     position: fixed;
-    top: 225px;
+    top: 172px;
     left: 80px;
-    width: 320px;
+    width: 240px;
 }
 
 @media (max-width: 768px) {
     .stepper-fixed {
         position: static;
-        margin-top: 20px;
+        padding: 80px 0 80px 0;
         width: 100%;
         left: auto;
         top: auto;

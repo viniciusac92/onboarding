@@ -27,7 +27,6 @@ const LoginForm: React.FC<LoginFormProps> = ({ form, onSubmit }) => {
                     className="mb-2"
                     register={register}
                 />
-
                 <TextField
                     control={control}
                     name="password"
@@ -37,14 +36,12 @@ const LoginForm: React.FC<LoginFormProps> = ({ form, onSubmit }) => {
                     className="mb-4"
                     register={register}
                 />
-
                 <RememberMeField
                     control={control}
                     name="rememberMe"
                     label="Lembrar"
                     className="inline-block align-middle mb-4"
                 />
-
                 <button
                     type="submit"
                     className="w-full bg-blue-500 text-white mb-4 py-2 px-4 rounded hover:bg-blue-600"

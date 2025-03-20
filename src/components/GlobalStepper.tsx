@@ -97,32 +97,30 @@ const GlobalStepper: React.FC<GlobalStepperProps> = ({ heading, paragraph, activ
     const isMobile = useMediaQuery('(max-width:768px)');
 
     return (
-        <>
+        <div className="stepper-fixed">
             <OnboardingInfoText heading={heading} paragraph={paragraph} />
-            <div className="stepper-fixed">
-                <Box>
-                    <Stepper
-                        activeStep={activeStep}
-                        orientation={isMobile ? 'horizontal' : 'vertical'}
-                        connector={isMobile ? <HorizontalConnector /> : <CustomConnector />}
-                        sx={{
-                            '.MuiStepLabel-label': {
-                                display: isMobile ? 'none' : 'block',
-                            },
-                            '.MuiStepLabel-iconContainer': {
-                                paddingRight: isMobile ? 0 : 1,
-                            },
-                        }}
-                    >
-                        {steps.map(step => (
-                            <Step key={step.label}>
-                                <StepLabel StepIconComponent={MyStepIcon}>{step.label}</StepLabel>
-                            </Step>
-                        ))}
-                    </Stepper>
-                </Box>
-            </div>
-        </>
+            <Box className="px-0">
+                <Stepper
+                    activeStep={activeStep}
+                    orientation={isMobile ? 'horizontal' : 'vertical'}
+                    connector={isMobile ? <HorizontalConnector /> : <CustomConnector />}
+                    sx={{
+                        '.MuiStepLabel-label': {
+                            display: isMobile ? 'none' : 'block',
+                        },
+                        '.MuiStepLabel-iconContainer': {
+                            paddingRight: isMobile ? 0 : 1,
+                        },
+                    }}
+                >
+                    {steps.map(step => (
+                        <Step key={step.label}>
+                            <StepLabel StepIconComponent={MyStepIcon}>{step.label}</StepLabel>
+                        </Step>
+                    ))}
+                </Stepper>
+            </Box>
+        </div>
     );
 };
 

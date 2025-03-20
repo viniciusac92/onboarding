@@ -3,7 +3,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
-const AddressContainer: React.FC = () => {
+const GovAccessContainer: React.FC = () => {
     const login = 'E-mail';
     const password = 'Senha';
 
@@ -16,7 +16,7 @@ const AddressContainer: React.FC = () => {
                         <Label className="block font-bold mb-1.5">Login</Label>
                         <Input readOnly value={login} />
                     </div>
-                    <div className="mb-4">
+                    <div>
                         <Label className="block font-bold mb-1.5">Senha</Label>
                         <Input readOnly value={password} />
                     </div>
@@ -26,4 +26,4 @@ const AddressContainer: React.FC = () => {
     );
 };
 
-export default AddressContainer;
+export default GovAccessContainer;

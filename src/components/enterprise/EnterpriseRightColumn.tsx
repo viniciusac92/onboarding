@@ -4,21 +4,22 @@ import ProfessionContainer from '@/containers/ProfessionContainer';
 import MaritalStatusContainer from '@/containers/MaritalStatusContainer';
 import ProfessionalLicenseContainer from '@/containers/ProfessionalLicenseContainer';
 
-interface RegisterRightColumnProps {
+interface EnterpriseRightColumnProps {
     handleNext: () => void;
 }
 
-const RegisterRightColumn: React.FC<RegisterRightColumnProps> = ({ handleNext }) => {
+const EnterpriseRightColumn: React.FC<EnterpriseRightColumnProps> = ({ handleNext }) => {
     return (
-        <div className="responsive-column flex flex-col pt-12 pr-20 space-y-4 md:space-y-6 min-h-screen max-w-[340px]">
+        <div className="responsive-column flex flex-col pt-12 pb-24 pr-12 space-y-4 max-w-[340px]">
             <MaritalStatusContainer />
             <ProfessionContainer />
             <ProfessionalLicenseContainer />
-            <div className="mt-auto">
+
+            <div>
                 <Button
                     variant="default"
                     onClick={handleNext}
-                    className="flex items-center justify-between w-full normal-case bg-[var(--default-blue-background)] rounded hover:bg-[var(--default-blue-hover)]"
+                    className="flex items-center justify-between w-full normal-case"
                 >
                     <span className="relative top-[1px]">Avançar</span>
                     <ChevronRight />
@@ -28,4 +29,4 @@ const RegisterRightColumn: React.FC<RegisterRightColumnProps> = ({ handleNext })
     );
 };
 
-export default RegisterRightColumn;
+export default EnterpriseRightColumn;

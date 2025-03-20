@@ -3,8 +3,8 @@ import '../index.css';
 import { useNavigate } from 'react-router-dom';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { validateEmailAndLogin } from '@/utils/auth';
-import myBackground from '../assets/obvia-login-background-image.png';
 import LoginContainer from '@/containers/LoginContainer';
+import myBackground from '../assets/obvia-login-background-image.png';
 
 const Login: React.FC = () => {
     const navigate = useNavigate();

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/fonts/inter.css'; // Import local Inter font
+import './assets/fonts/inter.css';
 import './index.css';
 import { App } from './App';
 

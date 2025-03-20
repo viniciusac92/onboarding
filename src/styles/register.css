@@ -8,7 +8,6 @@
 
 .responsive-column {
     flex: 1 1 0;
-    min-width: 280px;
     color: var(--global-text-color);
 }
 
@@ -19,7 +18,7 @@
     }
     .responsive-column {
         flex: 1 1 100%;
-        padding: 56px 16px 0 16px;
+        padding: 0px 16px 0 16px;
         max-width: 100%;
     }
 
