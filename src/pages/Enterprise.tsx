@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
 import {
     EnterpriseLeftColumn,
     EnterpriseMiddleColumn,
@@ -19,10 +18,6 @@ const Enterprise: React.FC = () => {
             setActiveStep(prev => prev + 1);
         }
         navigate('/partners');
-    };
-
-    const handleBack = () => {
-        navigate('/register');
     };
 
     return (

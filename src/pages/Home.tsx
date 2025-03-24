@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserProfileCard, CompanyCard, AddCompanyButton, WelcomeSection } from '@/components/home';
-import obviaLogo from '../assets/obvia-logo.png';
 
 const Home: React.FC = () => {
     const navigate = useNavigate();
