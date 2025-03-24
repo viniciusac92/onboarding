@@ -10,7 +10,7 @@ interface RegisterRightColumnProps {
 
 const RegisterRightColumn: React.FC<RegisterRightColumnProps> = ({ handleNext }) => {
     return (
-        <div className="responsive-column flex flex-col pt-12 pr-20 space-y-4 md:space-y-6 min-h-screen max-w-[340px]">
+        <div className="responsive-column flex flex-col pt-12 pr-20 space-y-4 md:space-y-6 min-h-screen max-w-[360px]">
             <MaritalStatusContainer />
             <ProfessionContainer />
             <ProfessionalLicenseContainer />
@@ -18,7 +18,7 @@ const RegisterRightColumn: React.FC<RegisterRightColumnProps> = ({ handleNext })
                 <Button
                     variant="default"
                     onClick={handleNext}
-                    className="flex items-center justify-between w-full normal-case bg-[var(--default-blue-background)] rounded hover:bg-[var(--default-blue-hover)]"
+                    className="flex items-center justify-between w-full normal-case bg-[var(--default-blue-background)] rounded-md hover:bg-[var(--default-blue-hover)]"
                 >
                     <span className="relative top-[1px]">Avançar</span>
                     <ChevronRight />

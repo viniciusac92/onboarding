@@ -19,7 +19,7 @@ const Header: React.FC = () => {
             <div className="">
                 <a
                     href="#"
-                    className={`underline font-bold ${isLoginPage ? 'text-white' : 'text-black-500'}`}
+                    className={`underline font-medium ${isLoginPage ? 'text-white' : 'text-black-500'}`}
                 >
                     Entre em contato
                 </a>

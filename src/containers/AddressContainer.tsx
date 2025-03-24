@@ -14,8 +14,8 @@ const AddressContainer: React.FC = () => {
 
     return (
         <div className="flex flex-col">
-            <Card className="relative rounded border-none">
-                <CardHeader className="font-bold text-[16px]">Meu endereço</CardHeader>
+            <Card className="rounded-sm border-none gap-0">
+                <CardHeader className="font-semibold text-base gap-0 pb-4">Meu endereço</CardHeader>
                 <CardContent className="pt-0 mt-0 flex-1 overflow-y-auto">
                     <AddressFields
                         cep={cep}

@@ -11,7 +11,7 @@ const LabeledInput: React.FC<LabeledInputProps> = ({ label, value, className }) 
     return (
         <div className={className}>
             <CustomDataLabel>{label}</CustomDataLabel>
-            <Input value={value} />
+            <Input className="border-none" value={value} />
         </div>
     );
 };

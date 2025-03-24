@@ -11,7 +11,7 @@ const UserInfoContainer: React.FC = () => {
 
     return (
         <div className="flex flex-col">
-            <Card className="relative rounded h-full flex-1 border-none">
+            <Card className="relative rounded-sm h-full flex-1 border-none">
                 <CardContent className="pt-0 mt-0 flex-1 overflow-y-auto">
                     <LabeledInput label="Nome" value={name} className="mb-4" />
                     <div className="flex flex-row gap-4 mb-4">

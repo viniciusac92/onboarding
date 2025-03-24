@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { LabeledSelect } from '@/components/forms/maritalStatus';
 
 interface SelectOption {
@@ -21,7 +21,7 @@ const REGIME_PATRIMONIAL_OPTIONS: SelectOption[] = [
 
 const MaritalStatusContainer: React.FC = () => {
     return (
-        <Card className="relative rounded border-none">
+        <Card className="rounded-sm border-none gap-0">
             <CardContent>
                 <LabeledSelect
                     label="Estado Civil"

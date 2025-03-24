@@ -1,3 +1,4 @@
+import { CustomDataLabel } from '@/components/ui/customDataLabel';
 import { Label } from '../../ui/label';
 import { Select, SelectTrigger, SelectContent, SelectItem } from '../../ui/select';
 
@@ -8,6 +9,7 @@ interface SelectOption {
 
 interface LabeledSelectProps {
     label: string;
+    subtitle?: string;
     options: SelectOption[];
     defaultValue?: string;
     placeholder?: string;
@@ -15,15 +17,17 @@ interface LabeledSelectProps {
 
 const LabeledSelect: React.FC<LabeledSelectProps> = ({
     label,
+    subtitle,
     options,
     defaultValue,
     placeholder = 'Selecione...',
 }) => {
     return (
         <div>
-            <Label className="block font-bold mb-3.5">{label}</Label>
+            <CustomDataLabel className="pb-3.5 mb-0">{label}</CustomDataLabel>
+            {subtitle && <Label className="font-normal pb-1.5">{subtitle}</Label>}
             <Select defaultValue={defaultValue}>
-                <SelectTrigger className="w-full focus-visible:ring-0 bg-gray-100">
+                <SelectTrigger className="w-full border-none focus-visible:ring-0 bg-gray-100">
                     {options.find(opt => opt.value === defaultValue)?.label ?? placeholder}
                 </SelectTrigger>
                 <SelectContent>
