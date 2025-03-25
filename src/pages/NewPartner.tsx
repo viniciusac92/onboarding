@@ -5,7 +5,7 @@ import {
     NewPartnerMiddleColumn,
     NewPartnerRightColumn,
 } from '@/components/newPartner';
-import '../styles/register.css';
+import '../styles/structure.css';
 
 const NewPartner: React.FC = () => {
     const navigate = useNavigate();

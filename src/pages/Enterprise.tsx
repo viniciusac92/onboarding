@@ -5,18 +5,15 @@ import {
     EnterpriseMiddleColumn,
     EnterpriseRightColumn,
 } from '@/components/enterprise';
-import '../styles/register.css';
+import '../styles/structure.css';
 
 const steps = [{ label: 'Seus dados' }, { label: 'Sobre a empresa' }, { label: 'Sócios' }];
 
 const Enterprise: React.FC = () => {
     const navigate = useNavigate();
-    const [activeStep, setActiveStep] = React.useState(1); // Set to 1 for 'Sobre a empresa'
+    const activeStep = 1;
 
     const handleNext = () => {
-        if (activeStep < steps.length - 1) {
-            setActiveStep(prev => prev + 1);
-        }
         navigate('/partners');
     };
 

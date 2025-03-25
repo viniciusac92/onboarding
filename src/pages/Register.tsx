@@ -5,19 +5,15 @@ import {
     RegisterMiddleColumn,
     RegisterRightColumn,
 } from '@/components/register';
-import '../styles/register.css';
+import '../styles/structure.css';
 
 const steps = [{ label: 'Seus dados' }, { label: 'Sobre a empresa' }, { label: 'Sócios' }];
 const Register: React.FC = () => {
     const navigate = useNavigate();
-    const [activeStep, setActiveStep] = React.useState(0);
+    const activeStep = 0;
 
     const handleNext = () => {
-        if (activeStep < steps.length - 1) {
-            setActiveStep(prev => prev + 1);
-        } else {
-            navigate('/enterprise');
-        }
+        navigate('/enterprise');
     };
 
     return (

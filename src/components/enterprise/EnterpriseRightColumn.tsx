@@ -16,7 +16,7 @@ const EnterpriseRightColumn: React.FC<EnterpriseRightColumnProps> = ({ handleNex
             <Card className="rounded-sm p-6 border-none">
                 <CardContent className="p-0">
                     <Label className="text-base font-medium pb-1.5">IPTU</Label>
-                    <Label className="font-normal pb-1.5">
+                    <Label className="font-normal pb-1.5 leading-5">
                         Indique o número do IPTU do local da empresa.
                     </Label>
                     <Input className="border-none" placeholder="Ex: 125.008" />

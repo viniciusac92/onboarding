@@ -1,11 +1,7 @@
 import React from 'react';
+import '../styles/structure.css';
 import { useNavigate } from 'react-router-dom';
-import {
-    PartnersLeftColumn,
-    PartnersMiddleColumn,
-    PartnersRightColumn,
-} from '@/components/partners';
-import '../styles/register.css';
+import { PartnersLeftColumn, PartnersMiddleColumn } from '@/components/partners';
 
 const steps = [{ label: 'Seus dados' }, { label: 'Sobre a empresa' }, { label: 'Sócios' }];
 
@@ -15,17 +11,15 @@ const Partners: React.FC = () => {
 
     const handleNext = () => {
         navigate('/home');
-        console.log('Finalized');
     };
 
     return (
-        <div className="flex">
+        <div className="flex ">
             <div className="flex-1 ml-1/4">
-                <div className="flex flex-col items-start pt-24">
-                    <div className="responsive-container py-8">
+                <div className="flex flex-col items-start pt-24 pb-5 h-screen">
+                    <div className="responsive-container py-8 h-full">
                         <PartnersLeftColumn activeStep={activeStep} steps={steps} />
-                        <PartnersMiddleColumn />
-                        {/* <PartnersRightColumn handleNext={handleNext} /> */}
+                        <PartnersMiddleColumn handleNext={handleNext} />
                     </div>
                 </div>
             </div>

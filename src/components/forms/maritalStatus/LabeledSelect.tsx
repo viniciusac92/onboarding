@@ -25,7 +25,7 @@ const LabeledSelect: React.FC<LabeledSelectProps> = ({
     return (
         <div>
             <CustomDataLabel className="pb-3.5 mb-0">{label}</CustomDataLabel>
-            {subtitle && <Label className="font-normal pb-1.5">{subtitle}</Label>}
+            {subtitle && <Label className="font-normal pb-1.5 leading-5">{subtitle}</Label>}
             <Select defaultValue={defaultValue}>
                 <SelectTrigger className="w-full border-none focus-visible:ring-0 bg-gray-100">
                     {options.find(opt => opt.value === defaultValue)?.label ?? placeholder}

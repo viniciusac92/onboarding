@@ -45,14 +45,14 @@ const EnterpriseSpecificationContainer: React.FC = () => {
                 <div className="flex gap-14 pb-10">
                     <div className="w-full">
                         <CustomDataLabel className="pb-2">Capital Social</CustomDataLabel>
-                        <Label className="font-normal pb-3.5">
+                        <Label className="font-normal pb-3.5 leading-5">
                             Valor investido inicialmente para abrir uma empresa. (Valor real)
                         </Label>
                         <Input className="border-none" placeholder="R$ 8.000.000,00" />
                     </div>
                     <div className="w-full">
                         <CustomDataLabel className="pb-2">Participação societária</CustomDataLabel>
-                        <Label className="font-normal pb-3.5">
+                        <Label className="font-normal pb-3.5 leading-5">
                             Informe o valor em percentual da sua participação na empresa.{' '}
                         </Label>
                         <Input className="border-none" placeholder="45%" />
@@ -60,7 +60,7 @@ const EnterpriseSpecificationContainer: React.FC = () => {
                 </div>
                 <div className="">
                     <Label className="text-base font-medium mb-1.5">Objeto Social</Label>
-                    <Label className="font-normal pb-1.5">
+                    <Label className="font-normal pb-1.5 leading-5">
                         Descreva detalhadamente o negócio da sua empresa e quais atividades ela
                         realiza.
                     </Label>

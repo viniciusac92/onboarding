@@ -15,7 +15,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({ companyName, status }) => {
                 <div className="flex items-center justify-between">
                     <Label className="font-semibold text-base">[{companyName}]</Label>
                     <Button
-                        className={`w-[131px] rounded-md text-sm ${status === 'concluido' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'}`}
+                        className={`w-31.75 rounded-md text-sm ${status === 'concluido' ? 'bg-green-100 text-green-700 hover:bg-green-50' : 'bg-yellow-100 text-yellow-700 hover:bg-yellow-50'}`}
                     >
                         {status === 'concluido' ? 'Concluído' : 'Pendente'}
                     </Button>

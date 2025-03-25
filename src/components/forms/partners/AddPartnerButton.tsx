@@ -13,7 +13,7 @@ const AddCompanyButton: React.FC = () => {
     return (
         <Button
             onClick={handleAddCompany}
-            className="bg-blue-500 hover:bg-blue-600 flex items-center gap-2"
+            className="flex items-center justify-between h-10 w-31 text-sm bg-[var(--default-blue-background)] rounded-md hover:bg-[var(--default-blue-hover)]"
         >
             <Plus size={16} />
             Novo Sócio
