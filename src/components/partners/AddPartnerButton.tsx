@@ -1,7 +1,7 @@
 import React from 'react';
+import { Plus } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Plus } from 'lucide-react';
 
 const AddCompanyButton: React.FC = () => {
     const navigate = useNavigate();
@@ -16,7 +16,7 @@ const AddCompanyButton: React.FC = () => {
             className="bg-blue-500 hover:bg-blue-600 flex items-center gap-2"
         >
             <Plus size={16} />
-            Nova Empresa
+            Novo Sócio
         </Button>
     );
 };

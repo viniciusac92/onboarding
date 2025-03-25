@@ -20,7 +20,7 @@ const AddressFields: React.FC<AddressFieldsProps> = ({
     complemento,
 }) => {
     return (
-        <>
+        <div className="mb-4">
             <div className="flex flex-row gap-4 mb-4">
                 <LabeledInput label="CEP" value={cep} className="flex-1 max-w-[128px]" />
                 <LabeledInput label="Cidade" value={cidade} className="flex-1" />
@@ -36,7 +36,7 @@ const AddressFields: React.FC<AddressFieldsProps> = ({
                 value={complemento}
                 className="flex-1 max-w-[262px]"
             />
-        </>
+        </div>
     );
 };
 

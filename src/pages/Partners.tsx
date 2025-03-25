@@ -11,12 +11,9 @@ const steps = [{ label: 'Seus dados' }, { label: 'Sobre a empresa' }, { label: '
 
 const Partners: React.FC = () => {
     const navigate = useNavigate();
-    // We'll use this constant directly without setting state since this page
-    // is specifically for the Sócios step
-    const activeStep = 2; // 'Sócios' is the third step (index 2)
+    const activeStep = 2;
 
     const handleNext = () => {
-        // Navigate to completion or next page
         navigate('/home');
         console.log('Finalized');
     };
@@ -28,7 +25,7 @@ const Partners: React.FC = () => {
                     <div className="responsive-container py-8">
                         <PartnersLeftColumn activeStep={activeStep} steps={steps} />
                         <PartnersMiddleColumn />
-                        <PartnersRightColumn handleNext={handleNext} />
+                        {/* <PartnersRightColumn handleNext={handleNext} /> */}
                     </div>
                 </div>
             </div>

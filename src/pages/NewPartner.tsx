@@ -11,7 +11,6 @@ const NewPartner: React.FC = () => {
     const navigate = useNavigate();
 
     const handleSave = () => {
-        // Navigate back to partners page after saving
         navigate('/partners');
     };
 

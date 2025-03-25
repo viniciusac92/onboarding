@@ -1,30 +1,28 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Pencil } from 'lucide-react';
+import { Button } from '../ui/button';
+import { Pencil, User } from 'lucide-react';
+import { Card } from '../ui/card';
+import { Label } from '../ui/label';
 
 const UserProfileCard: React.FC = () => {
     return (
-        <div className="bg-white rounded-lg p-6 w-full max-w-[264px] flex flex-col items-center">
-            {/* User Avatar */}
-            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-blue-500 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
+        <Card className="rounded-sm border-none gap-0 p-6">
+            <div className="flex items-center justify-center w-10 h-10 bg-blue-100 text-blue-500 rounded-full mb-4">
+                <User />
             </div>
-            
-            {/* User Name */}
-            <h3 className="text-base font-bold mb-6">Arthur Felipe Moitinho</h3>
-            
-            {/* Edit Profile Button */}
-            <Button 
-                variant="default" 
-                className="bg-blue-500 hover:bg-blue-600 w-full flex items-center justify-center gap-2"
+            <Label className="text-base font-medium mt-2">Arthur Felipe Moitinho</Label>
+            <div
+                className="border-t my-6"
+                style={{ borderColor: 'var(--global-section-divider-color)' }}
+            />
+            <Button
+                variant="default"
+                className="flex items-center justify-between gap-2 px-4 bg-blue-500 hover:bg-blue-600 w-full"
             >
                 Editar perfil
                 <Pencil size={16} />
             </Button>
-        </div>
+        </Card>
     );
 };
 
