@@ -10,7 +10,7 @@ interface PartnersMiddleColumnProps {
 
 const PartnersMiddleColumn: React.FC<PartnersMiddleColumnProps> = ({ handleNext }) => {
     return (
-        <div className="responsive-column flex flex-col pl-4 pr-20 pb-5 space-y-4">
+        <div className="responsive-column flex flex-col pl-4 pr-20 space-y-4">
             <div className="flex justify-between items-start">
                 <h1 className="responsive-page-title text-3xl font-bold">Seus sócios</h1>
                 <AddPartnerButton />
@@ -18,7 +18,7 @@ const PartnersMiddleColumn: React.FC<PartnersMiddleColumnProps> = ({ handleNext 
             <div className="flex-grow space-y-4">
                 <PartnersOverviewContainer />
             </div>
-            <div className="flex justify-end items-center">
+            <div className="flex justify-end items-center pb-6">
                 <Button
                     variant="default"
                     className="flex items-center justify-between h-10 w-72.5 text-sm bg-[var(--default-blue-background)] rounded-md hover:bg-[var(--default-blue-hover)]"

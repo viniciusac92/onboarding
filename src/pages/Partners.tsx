@@ -17,7 +17,7 @@ const Partners: React.FC = () => {
         <div className="flex ">
             <div className="flex-1 ml-1/4">
                 <div className="flex flex-col items-start pt-24 pb-5 h-screen">
-                    <div className="responsive-container py-8 h-full">
+                    <div className="responsive-container pt-8 h-full">
                         <PartnersLeftColumn activeStep={activeStep} steps={steps} />
                         <PartnersMiddleColumn handleNext={handleNext} />
                     </div>
