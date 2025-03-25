@@ -5,7 +5,7 @@ import {
     RegisterMiddleColumn,
     RegisterRightColumn,
 } from '@/components/register';
-import '../styles/structure.css';
+import '../styles/containerStructure.css';
 
 const steps = [{ label: 'Seus dados' }, { label: 'Sobre a empresa' }, { label: 'Sócios' }];
 const Register: React.FC = () => {

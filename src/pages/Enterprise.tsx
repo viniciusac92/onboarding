@@ -5,7 +5,7 @@ import {
     EnterpriseMiddleColumn,
     EnterpriseRightColumn,
 } from '@/components/enterprise';
-import '../styles/structure.css';
+import '../styles/containerStructure.css';
 
 const steps = [{ label: 'Seus dados' }, { label: 'Sobre a empresa' }, { label: 'Sócios' }];
 

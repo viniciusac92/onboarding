@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/structure.css';
+import '../styles/containerStructure.css';
 import { useNavigate } from 'react-router-dom';
 import { PartnersLeftColumn, PartnersMiddleColumn } from '@/components/partners';
 

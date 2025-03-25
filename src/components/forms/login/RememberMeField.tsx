@@ -26,7 +26,7 @@ const RememberMeField: React.FC<RememberMeFieldProps> = ({ control, name, label,
                         <Checkbox
                             checked={Boolean(field.value)}
                             onCheckedChange={field.onChange}
-                            className="data-[state=checked]:bg-blue-500 data-[state=checked]:border-blue-500 w-4 h-4"
+                            className="rounded-xs data-[state=checked]:bg-blue-500 data-[state=checked]:border-blue-500 w-4 h-4"
                         />
                     </FormControl>
                     <FormLabel className="inline-block align-middle ml-2">{label}</FormLabel>

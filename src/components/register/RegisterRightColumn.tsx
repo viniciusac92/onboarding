@@ -10,7 +10,7 @@ interface RegisterRightColumnProps {
 
 const RegisterRightColumn: React.FC<RegisterRightColumnProps> = ({ handleNext }) => {
     return (
-        <div className="responsive-column flex flex-col pt-12 pr-20 space-y-4 md:space-y-6 min-h-screen max-w-[360px]">
+        <div className="responsive-column flex flex-col pt-12 mr-20 space-y-4 md:space-y-6 max-w-[292px]">
             <MaritalStatusContainer />
             <ProfessionContainer />
             <ProfessionalLicenseContainer />
