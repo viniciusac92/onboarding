@@ -137,6 +137,20 @@
         /* Firefox */
     }
 
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        background-color: #f5f5f5 !important;
+        -webkit-text-fill-color: #000 !important;
+        -webkit-box-shadow: 0 0 0px 1000px #f5f5f5 inset !important;
+        box-shadow: 0 0 0px 1000px #f5f5f5 inset !important;
+
+        /* Prevent Chrome from re-coloring */
+        transition: background-color 99999s;
+        transition-delay: 99999s;
+    }
+
     body::-webkit-scrollbar {
         width: 0;
         /* Safari and Chrome */

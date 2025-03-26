@@ -43,19 +43,19 @@ const TextField: React.FC<TextFieldProps> = ({
                 <FormItem className={className}>
                     <FormLabel>{label}</FormLabel>
                     <FormControl>
-                        <div className="flex items-center border border-input rounded-md px-3 py-2">
+                        <div className="flex items-center h-9 px-3 bg-gray-100 border border-input rounded-md">
                             <input
                                 type={isPassword ? (showPassword ? 'text' : 'password') : type}
                                 placeholder={placeholder}
                                 {...field}
                                 {...register}
-                                className="flex-1 text-sm text-[var(--global-text-color)] bg-transparent focus:outline-none"
+                                className="flex-1 text-sm bg-gray-100 focus:outline-none"
                             />
                             {isPassword && (
                                 <button
                                     type="button"
                                     onClick={togglePasswordVisibility}
-                                    className="ml-2 text-gray-400 hover:text-gray-600 focus:outline-none"
+                                    className="text-gray-400 hover:text-inherit bg-gray-100 focus:outline-none"
                                 >
                                     {showPassword ? (
                                         <Eye className="h-5 w-5" />
