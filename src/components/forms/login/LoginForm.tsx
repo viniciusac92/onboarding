@@ -33,14 +33,13 @@ const LoginForm: React.FC<LoginFormProps> = ({ form, onSubmit }) => {
                     label="Senha"
                     placeholder="Senha"
                     type="password"
-                    className="mb-4"
                     register={register}
                 />
                 <RememberMeField
                     control={control}
                     name="rememberMe"
                     label="Lembrar"
-                    className="inline-block align-middle mb-4"
+                    className="flex flex-row items-e my-4"
                 />
                 <button
                     type="submit"

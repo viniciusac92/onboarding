@@ -23,7 +23,7 @@ const EnterpriseIdentificationContainer: React.FC = () => {
                     <Label className="font-normal pb-1.5">
                         Denominação social ou firma empresarial.
                     </Label>
-                    <Input className="border-none" placeholder={razaoSocial} />
+                    <Input className="text-sm font-normal border-none" placeholder={razaoSocial} />
                 </div>
                 <div className="pb-4">
                     <LabeledInput label="Segunda opção" value={razaoSocialSegundaOpcao} />
@@ -38,7 +38,7 @@ const EnterpriseIdentificationContainer: React.FC = () => {
                 <div>
                     <Label className="font-bold mb-1.5">Nome fantasia</Label>
                     <Label className="font-normal pb-1.5">Como a empresa é conhecida?</Label>
-                    <Input className="border-none" placeholder={tradingName} />
+                    <Input className="text-sm font-normal border-none" placeholder={tradingName} />
                 </div>
             </CardContent>
         </Card>

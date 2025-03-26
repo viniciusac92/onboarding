@@ -36,6 +36,10 @@ const AddressFields: React.FC<AddressFieldsProps> = ({
                 value={complemento}
                 className="flex-1 max-w-[262px]"
             />
+            <div
+                className="border-t my-4"
+                style={{ borderColor: 'var(--global-section-divider-color)' }}
+            />
         </div>
     );
 };

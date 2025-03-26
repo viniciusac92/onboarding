@@ -19,7 +19,7 @@ const EnterpriseRightColumn: React.FC<EnterpriseRightColumnProps> = ({ handleNex
                     <Label className="font-normal pb-1.5 leading-5">
                         Indique o número do IPTU do local da empresa.
                     </Label>
-                    <Input className="border-none" placeholder="Ex: 125.008" />
+                    <Input className="text-sm font-normal border-none" placeholder="Ex: 125.008" />
                     <div
                         className="border-t my-4"
                         style={{ borderColor: 'var(--global-section-divider-color)' }}

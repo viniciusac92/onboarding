@@ -9,7 +9,7 @@ const ProfessionContainer: React.FC = () => {
             <CardContent className="p-0">
                 <CustomDataLabel className="mb-2">Profissão</CustomDataLabel>
                 <Label className="font-normal pb-3.5">Informe sua profissão</Label>
-                <Input className="border-none" placeholder="Ex: Contador" />
+                <Input className="text-sm font-normal border-none" placeholder="Ex: Contador" />
             </CardContent>
         </Card>
     );

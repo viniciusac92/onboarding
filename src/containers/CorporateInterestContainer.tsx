@@ -7,11 +7,11 @@ const CorporateInterestContainer: React.FC = () => {
     return (
         <Card className="rounded-sm p-6 border-none">
             <CardContent className="p-0">
-                <CustomDataLabel className="mb-2">Participação societária</CustomDataLabel>
-                <Label className="font-normal pb-3.5">
+                <CustomDataLabel className="mb-2">Pró-labore</CustomDataLabel>
+                <Label className="font-normal pb-3.5 leading-5">
                     Informe o valor em percentual da participação do sócio.
                 </Label>
-                <Input className="border-none" placeholder="45%" />
+                <Input className="text-sm font-normal border-none" placeholder="R$ 45.000,00" />
             </CardContent>
         </Card>
     );

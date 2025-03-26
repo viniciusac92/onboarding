@@ -19,6 +19,10 @@ const UserInfoContainer: React.FC = () => {
                         <LabeledInput label="RG" value={rg} className="flex-1 max-w-33.5" />
                         <LabeledInput label="Órgão" value={orgao} className="flex-1 max-w-19" />
                     </div>
+                    <div
+                        className="border-t my-4"
+                        style={{ borderColor: 'var(--global-section-divider-color)' }}
+                    />
                     <FileUploadArea title="Anexar CNH ou RG" description="Arraste e solte" />
                 </CardContent>
             </Card>

@@ -6,13 +6,13 @@ import { Button } from '@/components/ui/button';
 const AddCompanyButton: React.FC = () => {
     const navigate = useNavigate();
 
-    const handleAddCompany = () => {
-        navigate('/register');
+    const handleAddPartner = () => {
+        navigate('/new-partner');
     };
 
     return (
         <Button
-            onClick={handleAddCompany}
+            onClick={handleAddPartner}
             className="flex items-center justify-between h-10 w-31 text-sm bg-[var(--default-blue-background)] rounded-md hover:bg-[var(--default-blue-hover)]"
         >
             <Plus size={16} />
