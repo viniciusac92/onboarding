@@ -12,7 +12,8 @@ const EnterpriseAddressContainer: React.FC = () => {
     const bairro = 'Bairro 1';
     const numero = '1';
     const complemento = 'apto 505';
-    const metragem = '150';
+    const areaTerreno = '600';
+    const areaEdificada = '400';
 
     return (
         <Card className="rounded-sm border-none gap-0">
@@ -45,9 +46,20 @@ const EnterpriseAddressContainer: React.FC = () => {
                         value={complemento}
                         className="flex-1 max-w-[262px]"
                     />
+                </div>
+                <div
+                    className="border-t my-4"
+                    style={{ borderColor: 'var(--global-section-divider-color)' }}
+                />
+                <div className="flex gap-4">
                     <LabeledInput
-                        label="Metragem (m²)"
-                        value={metragem}
+                        label="Área do terreno (Metros)"
+                        value={areaTerreno}
+                        className="flex-1 max-w-[262px]"
+                    />
+                    <LabeledInput
+                        label="Área edificada (Metros)"
+                        value={areaEdificada}
                         className="flex-1 max-w-[262px]"
                     />
                 </div>

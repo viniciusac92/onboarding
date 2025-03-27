@@ -1,5 +1,4 @@
 import { Button } from '../ui/button';
-import { ChevronRight } from 'lucide-react';
 import ProfessionContainer from '@/containers/ProfessionContainer';
 import MaritalStatusContainer from '@/containers/MaritalStatusContainer';
 import CorporateInterestContainer from '@/containers/CorporateInterestContainer';
@@ -18,10 +17,9 @@ const NewPartnerRightColumn: React.FC<NewPartnerRightColumnProps> = ({ handleSav
                 <Button
                     variant="default"
                     onClick={handleSave}
-                    className="flex items-center justify-between w-full normal-case bg-[var(--default-blue-background)] rounded-md hover:bg-[var(--default-blue-hover)]"
+                    className="flex items-center justify-center w-full bg-[var(--default-blue-background)] rounded-md hover:bg-[var(--default-blue-hover)]"
                 >
-                    <span className="relative top-[1px]">Avançar</span>
-                    <ChevronRight />
+                    Salvar alterações
                 </Button>
             </div>
         </div>

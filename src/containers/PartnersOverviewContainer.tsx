@@ -1,16 +1,31 @@
 import * as React from 'react';
 
-import { Card, CardContent } from '@/components/ui/card';
-import { Label } from '@/components/ui/label';
-import CollapsiblePartnerCard from '@/components/forms/partners/CollapsiblePartnerCard';
-import PartnerDetails from '@/components/forms/partners/PartnerDetails';
-import EditButton from '@/components/forms/partners/EditButton';
-import PartnerAddressFields from '@/components/forms/partners/PartnerAddressFields';
+import PartnerCard from '@/components/partners/PartnerCard';
 
-const PartnersOverviewContainer: React.FC = () => {
-    const [isOpen, setIsOpen] = React.useState(false);
-    const partnerData = {
+interface Address {
+    cep: string;
+    cidade: string;
+    estado: string;
+    logradouro: string;
+    bairro: string;
+    numero: string;
+    complemento: string;
+}
+
+interface Partner {
+    id: string;
+    name: string;
+    role: string;
+    cpf: string;
+    rg: string;
+    orgao: string;
+    address: Address;
+}
+const mockPartners: Partner[] = [
+    {
+        id: '1',
         name: 'Roswell Alter',
+        role: 'admin',
         cpf: 'xxx.xxx.xxx-xx',
         rg: 'xx.xxx-xxx',
         orgao: 'SSPMG',
@@ -23,67 +38,50 @@ const PartnersOverviewContainer: React.FC = () => {
             numero: '1',
             complemento: 'Complemento 1',
         },
-    };
+    },
+    {
+        id: '2',
+        name: 'Jane Doe',
+        role: 'client',
+        cpf: '999.999.999-99',
+        rg: '99.999-999',
+        orgao: 'SSPSP',
+        address: {
+            cep: '11111-111',
+            cidade: 'Rio de Janeiro',
+            estado: 'RJ',
+            logradouro: 'Avenida 2',
+            bairro: 'Bairro 2',
+            numero: '200',
+            complemento: 'Apto 303',
+        },
+    },
+    {
+        id: '3',
+        name: 'John Smith',
+        role: 'client',
+        cpf: '888.888.888-88',
+        rg: '88.888-888',
+        orgao: 'SSPRJ',
+        address: {
+            cep: '22222-222',
+            cidade: 'Belo Horizonte',
+            estado: 'MG',
+            logradouro: 'Praça 3',
+            bairro: 'Centro',
+            numero: '30',
+            complemento: 'Sala 505',
+        },
+    },
+];
 
-    const handleEdit = React.useCallback(() => {
-        console.log('Edit button clicked');
-    }, []);
-
+const PartnersOverviewContainer: React.FC = () => {
     return (
-        <>
-            <Card className="rounded-sm border-none">
-                <CardContent className="pt-0 mt-0 flex-1">
-                    <CollapsiblePartnerCard
-                        title={partnerData.name}
-                        isOpen={isOpen}
-                        onOpenChange={setIsOpen}
-                    >
-                        <PartnerDetails
-                            cpf={partnerData.cpf}
-                            rg={partnerData.rg}
-                            orgao={partnerData.orgao}
-                        />
-                        <Label className="font-semibold text-base m-0 pb-6">Endereço</Label>
-                        <PartnerAddressFields
-                            cep={partnerData.address.cep}
-                            cidade={partnerData.address.cidade}
-                            estado={partnerData.address.estado}
-                            logradouro={partnerData.address.logradouro}
-                            bairro={partnerData.address.bairro}
-                            numero={partnerData.address.numero}
-                            complemento={partnerData.address.complemento}
-                        />
-                        <EditButton onClick={handleEdit} />
-                    </CollapsiblePartnerCard>
-                </CardContent>
-            </Card>
-            <Card className="rounded-sm border-none">
-                <CardContent className="pt-0 mt-0 flex-1">
-                    <CollapsiblePartnerCard
-                        title={partnerData.name}
-                        isOpen={isOpen}
-                        onOpenChange={setIsOpen}
-                    >
-                        <PartnerDetails
-                            cpf={partnerData.cpf}
-                            rg={partnerData.rg}
-                            orgao={partnerData.orgao}
-                        />
-                        <Label className="font-semibold text-base m-0 pb-6">Endereço</Label>
-                        <PartnerAddressFields
-                            cep={partnerData.address.cep}
-                            cidade={partnerData.address.cidade}
-                            estado={partnerData.address.estado}
-                            logradouro={partnerData.address.logradouro}
-                            bairro={partnerData.address.bairro}
-                            numero={partnerData.address.numero}
-                            complemento={partnerData.address.complemento}
-                        />
-                        <EditButton onClick={handleEdit} />
-                    </CollapsiblePartnerCard>
-                </CardContent>
-            </Card>
-        </>
+        <div className="flex-grow space-y-4">
+            {mockPartners.map(partner => (
+                <PartnerCard key={partner.id} partner={partner} />
+            ))}
+        </div>
     );
 };
 

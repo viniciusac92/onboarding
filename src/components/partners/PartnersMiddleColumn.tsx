@@ -1,23 +1,32 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ArrowLeft, ChevronRight } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
 import AddPartnerButton from '../forms/partners/AddPartnerButton';
 import PartnersOverviewContainer from '@/containers/PartnersOverviewContainer';
-import { ChevronRight } from 'lucide-react';
 
 interface PartnersMiddleColumnProps {
     handleNext: () => void;
 }
 
 const PartnersMiddleColumn: React.FC<PartnersMiddleColumnProps> = ({ handleNext }) => {
+    const navigate = useNavigate();
     return (
         <div className="responsive-column flex flex-col pl-4 pr-20 space-y-4">
-            <div className="flex justify-between items-start">
-                <h1 className="responsive-page-title text-3xl font-bold">Seus sócios</h1>
+            <div className="flex justify-between items-center mb-3">
+                <div className="flex justify-between items-center">
+                    <Button
+                        onClick={() => navigate('/enterprise')}
+                        className="flex items-center justify-center h-10 w-10 p-0 mr-4 bg-white text-blue-500 hover:text-blue-600 hover:bg-white shrink-0 rounded-full shadow-none"
+                    >
+                        <ArrowLeft className="size-6" />
+                    </Button>
+                    <h1 className="responsive-page-title text-3xl font-bold">Seus sócios</h1>
+                </div>
                 <AddPartnerButton />
             </div>
-            <div className="flex-grow space-y-4">
-                <PartnersOverviewContainer />
-            </div>
+            <PartnersOverviewContainer />
             <div className="flex justify-end items-center pb-6">
                 <Button
                     variant="default"

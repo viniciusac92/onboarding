@@ -1,8 +1,9 @@
 import React from 'react';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import { Plus } from 'lucide-react';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import LabeledInput from '@/components/forms/LabeledInput';
+import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
 const EnterpriseIdentificationContainer: React.FC = () => {
     const razaoSocial = 'empresa LTDA';
@@ -38,7 +39,15 @@ const EnterpriseIdentificationContainer: React.FC = () => {
                 <div>
                     <Label className="font-bold mb-1.5">Nome fantasia</Label>
                     <Label className="font-normal pb-1.5">Como a empresa é conhecida?</Label>
-                    <Input className="text-sm font-normal border-none" placeholder={tradingName} />
+                    <div className="flex items-center">
+                        <Input
+                            className="text-sm font-normal border-none"
+                            placeholder={tradingName}
+                        />
+                        <span className="flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white rounded-full p-1.5 ml-4">
+                            <Plus className="size-3" />
+                        </span>
+                    </div>
                 </div>
             </CardContent>
         </Card>
