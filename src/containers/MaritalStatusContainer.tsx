@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { LabeledSelect } from '@/components/forms/maritalStatus';
+import LabeledSelect from '@/components/forms/LabeledSelect';
 
 interface SelectOption {
     value: string;

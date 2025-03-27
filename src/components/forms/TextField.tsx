@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Control } from 'react-hook-form';
 import { Eye, EyeOff } from 'lucide-react';
-import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '../../ui/form';
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form';
 
 interface LoginFormValues {
     username: string;

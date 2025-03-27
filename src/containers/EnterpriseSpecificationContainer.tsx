@@ -2,8 +2,8 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
-import { LabeledSelect } from '@/components/forms/maritalStatus';
 import { CustomDataLabel } from '@/components/ui/customDataLabel';
+import LabeledSelect from '@/components/forms/LabeledSelect';
 
 interface SelectOption {
     value: string;

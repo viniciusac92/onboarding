@@ -1,6 +1,6 @@
 import { CustomDataLabel } from '@/components/ui/customDataLabel';
-import { Label } from '../../ui/label';
-import { Select, SelectTrigger, SelectContent, SelectItem } from '../../ui/select';
+import { Label } from '../ui/label';
+import { Select, SelectTrigger, SelectContent, SelectItem } from '../ui/select';
 
 interface SelectOption {
     value: string;

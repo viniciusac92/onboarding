@@ -1,6 +1,7 @@
 import { UseFormReturn, SubmitHandler } from 'react-hook-form';
 import { Form } from '../../ui/form';
-import { TextField, RememberMeField } from './index';
+import { RememberMeField } from './index';
+import TextField from '../TextField';
 
 interface LoginFormValues {
     username: string;
